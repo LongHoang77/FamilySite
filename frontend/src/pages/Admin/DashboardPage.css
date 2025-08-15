@@ -1,0 +1,50 @@
+/* frontend/src/pages/Admin/DashboardPage.css */
+
+/* --- Styling cho Widget Lịch "Sticky Note" --- */
+
+/* Bọc ngoài cùng của Card */
+.sticky-note-calendar-card {
+  background: #fffbe6 !important; /* Màu nền vàng nhạt */
+  border: 1px solid #ffe58f !important; /* Viền vàng đậm hơn */
+  height: 100%;
+}
+
+/* Tùy chỉnh header của Lịch */
+.sticky-note-calendar-card .ant-picker-calendar-header {
+  padding: 8px 12px; /* Giảm padding */
+  justify-content: space-between;
+}
+
+/* Ẩn nút radio "Năm/Tháng" không cần thiết */
+.sticky-note-calendar-card .ant-picker-calendar-mode-switch {
+  display: none !important;
+}
+
+/* Thu nhỏ các ô ngày */
+.sticky-note-calendar-card .ant-picker-cell {
+  padding: 2px 4px !important;
+  height: 60px; /* Chiều cao cố định cho mỗi ô */
+}
+
+.sticky-note-calendar-card .ant-picker-cell-in-view .ant-picker-cell-inner {
+  height: 100%;
+}
+
+/* Style cho các chấm sự kiện sinh nhật */
+.sticky-note-calendar-card .events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 35px; /* Giới hạn chiều cao */
+  overflow: hidden;
+  font-size: 11px; /* Font nhỏ hơn */
+}
+
+.sticky-note-calendar-card .events .ant-badge-status-text {
+  max-width: 60px; /* Ngăn tên quá dài */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block; /* Cần thiết cho text-overflow */
+  vertical-align: middle;
+}

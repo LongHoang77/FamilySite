@@ -1,0 +1,41 @@
+/* frontend/src/pages/FamilyTreePage/components/FamilyTreeNode.css */
+.family-tree-node {
+  background: #ffffff;
+  border-radius: 8px; /* Tương thích với theme mới */
+  width: 180px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid; /* Dải màu phía trên */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.family-tree-node:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Định nghĩa màu cho dải màu theo giới tính */
+.male-node {
+  border-top-color: #008080; /* Màu Teal đồng bộ theme */
+}
+
+.female-node {
+  border-top-color: #c43a73; /* Một màu hồng/tím tinh tế */
+}
+
+/* CSS cho các điểm kết nối (Handle) */
+.handle {
+  background: #c1c1c1 !important;
+  border: none !important;
+  opacity: 0; /* Ẩn đi mặc định */
+  transition: opacity 0.2s;
+}
+.react-flow__node:hover .handle,
+.react-flow__node-selected .handle {
+  opacity: 1; /* Hiện ra khi hover vào node */
+}
+
+.spouse-handle {
+    background: #c43a73 !important;
+}

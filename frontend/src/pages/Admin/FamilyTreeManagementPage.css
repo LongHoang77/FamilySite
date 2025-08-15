@@ -1,0 +1,12 @@
+/* frontend/src/pages/Admin/FamilyTreeManagementPage.css */
+
+.family-tree-management-table .ant-table-expanded-row > .ant-table-cell {
+  padding: 0 !important;
+}
+
+.expanded-row-content {
+  /* Padding top/right/bottom là 16px/24px/16px. 
+     Padding left 50px để thẳng hàng với text của cột đầu tiên, sau icon expand. */
+  padding: 16px 24px 16px 50px; 
+  background: #fafafa;
+}   
